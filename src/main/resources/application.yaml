@@ -1,0 +1,18 @@
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/yamapublishing_api
+        username: root
+        password: ${PASSWORD:751842862953a}
+    jpa:
+        show-sql: true
+        properties:
+            hibernate:
+                format_sql: true
+server:
+    error:
+        include-stacktrace: never
+api:
+    security:
+        token:
+            secret: ${JWT_SECRET:2dw99g98kzwcrbtk}

@@ -3,7 +3,7 @@ spring:
         driver-class-name: com.mysql.cj.jdbc.Driver
         url: jdbc:mysql://localhost:3306/yamapublishing_api
         username: root
-        password: ${PASSWORD:root}
+        password: root
     jpa:
         show-sql: true
         properties:
